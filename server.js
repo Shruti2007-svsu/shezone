@@ -57,7 +57,7 @@ app.post("/quick-shield", (req, res) => {
 
 // --- Default Route ---
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "final.html"));
+  \res.sendfile(path.join(__dirname,"public/final.html));
 });
 
 app.listen(port, () => console.log(`🚀 Server running on port ${port}`));
